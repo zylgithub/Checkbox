@@ -1,0 +1,50 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_selectall"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/bt_selectall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:layout_gravity="bottom"
+        android:text="全选" />
+
+    <Button
+        android:id="@+id/bt_cancelselectall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_selectall"
+        android:layout_below="@+id/list"
+        android:text="取消选择" />
+    <Button
+        android:id="@+id/bt_deselectall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:layout_toRightOf="@+id/bt_cancelselectall"
+        android:text="反选" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:layout_toRightOf="@+id/bt_deselectall"
+        android:text="确定" />
+
+</RelativeLayout>
