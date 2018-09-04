@@ -1,3 +1,3 @@
-# RecyclerViewChoice
-
-
+#状态保存
+##1.保存checkbox选取的状态
+##2.重新进入页面的时候获取已保存的状态
